@@ -21,7 +21,8 @@ export function News() {
         </motion.h1>
         <motion.p variants={fadeUp} initial="hidden" animate="visible"
           className="text-gray-500 dark:text-gray-400 max-w-xl text-sm md:text-base">
-          Latest announcements, publications, awards, and events from the Human-AI Cognition Laboratory.
+          Latest announcements, publications, awards, and events from the SUST Geography Laboratory.
+
         </motion.p>
       </section>
 
@@ -179,13 +180,15 @@ export function Contact() {
             <div className="h-36 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 flex items-center justify-center">
               <div className="text-center text-gray-400 dark:text-gray-500">
                 <MapPin size={20} className="mx-auto mb-1" />
-                <p className="text-xs">MIT Stata Center</p>
-                <p className="text-xs">Cambridge, MA</p>
+                <p className="text-xs">SUST Geography Laboratory</p>
+                <p className="text-xs">Sylhet, Bangladesh</p>
+
               </div>
             </div>
             <div className="p-3">
               <a
-                href="https://maps.google.com/?q=MIT+Stata+Center+Cambridge+MA"
+                href="https://maps.google.com/?q=Shahjalal+University+of+Science+and+Technology+Sylhet"
+
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-xs text-navy-600 dark:text-blue-400 hover:underline"

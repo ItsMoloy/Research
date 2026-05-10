@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Home, BookOpen, Microscope, GraduationCap, Users,
@@ -7,6 +8,7 @@ import {
   Globe
 } from 'lucide-react';
 import { faculty } from '../data/faculty';
+
 
 const navLinks = [
   { to: '/', label: 'Home', icon: Home },
@@ -29,14 +31,26 @@ const socialLinks = [
 export default function Sidebar({ isOpen, onClose, isDark, toggleDark }) {
   const location = useLocation();
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
+
   const sidebarContent = (
     <div className="flex flex-col h-full overflow-y-auto">
       {/* Profile */}
       <div className="p-6 pb-4">
         <div className="relative mb-4">
           <div className="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-white/20">
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80"
+              <img
+              src="/dist/assets/image.png"
               alt={faculty.name}
               className="w-full h-full object-cover"
             />
@@ -49,7 +63,7 @@ export default function Sidebar({ isOpen, onClose, isDark, toggleDark }) {
         </h2>
         <p className="text-xs text-white/60 font-medium mb-0.5">{faculty.title}</p>
         <p className="text-xs text-white/50">{faculty.universityShort}</p>
-        
+
         <p className="mt-3 text-xs text-white/40 italic leading-relaxed">
           {faculty.tagline}
         </p>
@@ -151,8 +165,8 @@ export default function Sidebar({ isOpen, onClose, isDark, toggleDark }) {
               exit={{ x: -280 }}
               transition={{ type: 'spring', damping: 30, stiffness: 300 }}
               className="fixed left-0 top-0 h-full z-50 lg:hidden flex flex-col"
-              style={{ 
-                width: 280, 
+              style={{
+                width: 280,
                 background: 'linear-gradient(160deg, #0a1828 0%, #152f4a 50%, #1a3a5c 100%)'
               }}
             >

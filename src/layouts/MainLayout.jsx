@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Sidebar from '../components/Sidebar';
@@ -10,6 +10,18 @@ export default function MainLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isDark, toggleDark] = useDarkMode();
   const scrollProgress = useScrollProgress();
+
+  useEffect(() => {
+    if (!sidebarOpen) return;
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [sidebarOpen]);
+
 
   return (
     <div className="flex h-screen overflow-hidden bg-ivory-100 dark:bg-slate-950">

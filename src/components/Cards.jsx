@@ -169,14 +169,16 @@ export function Footer() {
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="font-serif text-sm font-medium text-gray-700 dark:text-gray-300">
-            Dr. Elena Marchetti
+            SUST Geography Laboratory
           </p>
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            Associate Professor · MIT · Cambridge, MA
+            SUST · Department of Geography and Environment
           </p>
+
         </div>
         <p className="text-xs text-gray-400 dark:text-gray-500">
-          © {new Date().getFullYear()} Elena Marchetti. All rights reserved.
+          © {new Date().getFullYear()} SUST Geography Laboratory. All rights reserved.
+
         </p>
       </div>
     </footer>

@@ -34,17 +34,19 @@ export default function Home() {
             className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 dark:text-white mb-6"
           >
             Shaping the Future of{' '}
-            <span className="text-gradient">Human–AI</span>{' '}
-            Collaboration
+            <span className="text-gradient">GIS</span>{' '}
+            & Environmental Mapping
+
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="text-gray-500 dark:text-gray-400 text-lg leading-relaxed max-w-2xl mb-8"
           >
-            I'm an Associate Professor at MIT, where I lead the Human-AI Cognition Laboratory.
-            My research bridges cognitive neuroscience and machine learning to build AI systems
-            that truly understand and collaborate with humans.
+            I’m a Professor at Shahjalal University of Science and Technology (SUST), where I lead the
+            SUST Geography Laboratory. Our research focuses on GIS, remote sensing, and spatial analysis
+            of environmental change—supporting evidence-based decisions for climate resilience.
+
           </motion.p>
 
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-8">
@@ -54,8 +56,8 @@ export default function Home() {
             <a href={faculty.cvUrl} className="btn-outline">
               <Download size={16} /> Download CV
             </a>
-            <Link to="/contact" className="btn-outline">
-              <Mail size={16} /> Contact Me
+          <Link to="/contact" className="btn-outline">
+              <Mail size={16} /> Contact
             </Link>
           </motion.div>
 
@@ -163,13 +165,15 @@ export default function Home() {
           className="rounded-2xl border border-gold-400/20 dark:border-gold-400/10 p-8 text-center"
           style={{ background: 'linear-gradient(135deg, rgba(196,154,60,0.04) 0%, rgba(26,58,92,0.04) 100%)' }}
         >
-          <p className="section-label mb-2 text-center">Join the Lab</p>
+          <p className="section-label mb-2 text-center">Join the Laboratory</p>
+
           <h2 className="font-serif text-2xl font-semibold text-gray-900 dark:text-white mb-3">
             Interested in Working Together?
           </h2>
           <p className="text-gray-500 dark:text-gray-400 text-sm mb-6 max-w-lg mx-auto">
             I'm always looking for motivated PhD students, postdocs, and research collaborators
-            passionate about human-AI interaction and cognitive systems.
+            focused on GIS, remote sensing, environmental mapping, and climate resilience.
+
           </p>
           <Link to="/contact" className="btn-primary inline-flex">
             Get in Touch <ArrowRight size={16} />

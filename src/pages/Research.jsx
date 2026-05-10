@@ -19,7 +19,7 @@ export default function Research() {
           animate="visible"
           className="font-serif text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight"
         >
-          Human-AI Cognition Lab
+          SUST Geography Laboratory
         </motion.h1>
         <motion.p
           variants={fadeUp}
@@ -27,9 +27,9 @@ export default function Research() {
           animate="visible"
           className="text-gray-500 dark:text-gray-400 text-base md:text-lg leading-relaxed max-w-2xl"
         >
-          The HACL develops computational and cognitive models that enable AI systems to work
-          synergistically with humans — understanding, adapting to, and augmenting human cognition
-          in high-stakes real-world environments.
+          The SUST Geography Laboratory advances GIS, remote sensing, and spatial analysis to study
+          environmental change, climate vulnerability, and resilience—turning geospatial evidence
+          into actionable insights for sustainable development.
         </motion.p>
       </section>
 
@@ -151,18 +151,18 @@ export default function Research() {
         >
           <p className="text-xs font-semibold tracking-widest uppercase text-gold-400 mb-3">Lab Information</p>
           <h3 className="font-serif text-2xl font-bold text-white mb-4">
-            Human-AI Cognition Laboratory
+            SUST Geography Laboratory
           </h3>
           <div className="grid sm:grid-cols-2 gap-6 text-sm">
             <div>
               <p className="text-white/50 text-xs mb-1">Location</p>
-              <p className="text-white/90">32-G574, Stata Center</p>
-              <p className="text-white/90">Cambridge, MA 02139</p>
+              <p className="text-white/90">Room 301, School of Life Sciences</p>
+              <p className="text-white/90">SUST, Sylhet-3114</p>
             </div>
             <div>
               <p className="text-white/50 text-xs mb-1">Affiliated With</p>
-              <p className="text-white/90">MIT CSAIL</p>
-              <p className="text-white/90">MIT Quest for Intelligence</p>
+              <p className="text-white/90">Department of Geography and Environment</p>
+              <p className="text-white/90">Shahjalal University of Science and Technology (SUST)</p>
             </div>
           </div>
         </motion.div>

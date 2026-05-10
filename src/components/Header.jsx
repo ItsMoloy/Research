@@ -40,7 +40,7 @@ export default function Header({ onMenuOpen, isDark, toggleDark, scrollProgress 
               {title}
             </h1>
             <p className="text-xs text-gray-400 dark:text-gray-500 hidden sm:block">
-              Dr. Elena Marchetti · MIT
+              SUST Geography Laboratory
             </p>
           </div>
         </div>

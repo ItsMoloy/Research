@@ -72,9 +72,10 @@ export default function Students() {
           animate="visible"
           className="text-gray-500 dark:text-gray-400 max-w-xl text-sm md:text-base"
         >
-          The HACL is home to an outstanding group of PhD students, master's students, and
-          research assistants working at the frontiers of human-AI interaction, cognitive systems,
-          and responsible AI.
+          The SUST Geography Laboratory is home to an outstanding group of PhD students, master's
+          students, and research assistants working on GIS, remote sensing, and spatial analysis
+          for environmental and climate change.
+
         </motion.p>
       </section>
 
@@ -174,12 +175,12 @@ export default function Students() {
             Prospective Students
           </h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-5 max-w-lg">
-            I'm actively recruiting PhD students for Fall 2026. I look for students with strong
-            backgrounds in ML, HCI, cognitive science, or neuroscience who are excited about
-            interdisciplinary research at the human-AI frontier.
+            The SUST Geography Laboratory is actively recruiting PhD students for Fall 2026.
+            We welcome applicants with strong backgrounds in GIS, remote sensing, environmental
+            geography, spatial analysis, and climate risk assessment.
           </p>
           <a href="/contact" className="btn-primary inline-flex">
-            Apply to Join the Lab
+            Apply to Join the Laboratory
           </a>
         </motion.div>
       </section>
