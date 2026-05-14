@@ -5,7 +5,7 @@ export const faculty = {
   department: "Department of Geography and Environment",
   university: "Shahjalal University of Science and Technology",
   universityShort: "SUST",
-  tagline: "Technology Intensive Geospatial and Remote Sensing (TIGERS) Lab",
+  tagline: "Geography and Environmental Engineering (GEE) Lab",
   email: "mahin-gee@sust.edu",
   phone: "+8801580380279",
   office: "Department of Geography and Environment, Shahjalal University of Science and Technology, Sylhet-3114, Bangladesh",

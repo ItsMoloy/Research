@@ -9,10 +9,10 @@ export default function Home() {
         {/* Lab Description */}
         <div className="mb-10">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Technology Intensive Geospatial and Remote Sensing (TIGERS) Lab
+            Geography and Environmental Engineering (GEE) Lab
           </h1>
           <p className="text-gray-700 text-base leading-relaxed mb-4">
-            TIGERS lab is a research laboratory that focuses on applying remote sensing technologies to various fields such as coastal dynamics, plant health and disease, precision agriculture, morphological analysis, wetland erosion and restoration, image processing and feature extraction. The laboratory has accumulated various surveying equipment, UAV systems, LiDAR systems, thermal and multispectral cameras for fine scale mapping and monitoring.
+            GEE lab is a research laboratory that focuses on applying remote sensing technologies to various fields such as coastal dynamics, plant health and disease, precision agriculture, morphological analysis, wetland erosion and restoration, image processing and feature extraction. The laboratory has accumulated various surveying equipment, UAV systems, LiDAR systems, thermal and multispectral cameras for fine scale mapping and monitoring.
           </p>
           <p className="text-gray-600 text-sm">
             Department of Geography and Environment<br />
