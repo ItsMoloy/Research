@@ -1,40 +1,50 @@
 export const faculty = {
-  name: "Dr. Ahmed Rahman",
-  shortName: "A. Rahman",
-  title: "Professor",
+  name: "Md. Mahin Uddin",
+  shortName: "M. M. Uddin",
+  title: "Lecturer",
   department: "Department of Geography and Environment",
   university: "Shahjalal University of Science and Technology",
   universityShort: "SUST",
-  tagline: "Exploring Spatial Dynamics & Environmental Change",
-  email: "arahman@geo.sust.edu",
-  phone: "+880 821-713491",
-  office: "Room 301, School of Life Sciences, SUST, Sylhet-3114",
-  officeHours: "Sunday & Tuesday, 10:00 AM – 12:00 PM",
+  tagline: "Technology Intensive Geospatial and Remote Sensing (TIGERS) Lab",
+  email: "mahin-gee@sust.edu",
+  phone: "+8801580380279",
+  office: "Department of Geography and Environment, Shahjalal University of Science and Technology, Sylhet-3114, Bangladesh",
+  officeHours: "Contact by email",
   googleScholar: "https://scholar.google.com/citations?user=example",
-  github: "https://github.com",
-  twitter: "https://twitter.com",
-  linkedin: "https://linkedin.com",
-  researchGate: "https://researchgate.net/profile/Ahmed-Rahman",
-  cvUrl: "/cv-ahmed-rahman.pdf",
-  bio: `Dr. Ahmed Rahman is a Professor in the Department of Geography and Environment at Shahjalal University of Science and Technology (SUST), where he leads the SUST Geography Laboratory. His research focuses on GIS, remote sensing, environmental geography, and spatial analysis of climate change impacts.
+  researchGate: "https://researchgate.net/profile/Md-Mahin-Uddin",
+  cvUrl: "/cv-mahin-uddin.pdf",
+  bio: `Md. Mahin Uddin is a Lecturer in the Department of Geography and Environment at Shahjalal University of Science and Technology (SUST). His research focuses on GIS, remote sensing, fluvial geomorphology, land use planning, forest ecosystems, and DRONE technology.
 
-Before joining SUST, he was a postdoctoral researcher at the International Centre for Climate Change and Development and received his Ph.D. in Geography from the University of Dhaka. He holds an M.S. in Environmental Science from SUST and a B.S. in Geography from the same institution.
+He completed his B.S. (Hon's) in 2019 and M.S. (Thesis; Physical Geography and Environment Stream) in 2020, both from the Department of Geography and Environment, University of Dhaka.
 
-Dr. Rahman's work has been recognized with the UGC Research Award, the Bangladesh Academy of Sciences Fellowship, and multiple best paper awards at international geography and environmental science conferences.`,
+His current active research project focuses on "Diverse types of coupling trends in tree and non-tree vegetation composition in key forest ecosystems of Bangladesh."`,
   interests: [
-    "Geographic Information Systems (GIS)",
-    "Remote Sensing & Satellite Imagery",
-    "Climate Change & Environmental Impact",
-    "Urban Geography & Spatial Planning",
-    "Natural Resource Management",
-    "Disaster Risk Reduction",
+    "GIS (Geographic Information System/Science)",
+    "Remote Sensing",
+    "Fluvial Geomorphology",
+    "Land Use Planning",
+    "Forest Ecosystem",
+    "DRONE Technology",
   ],
+  education: [
+    {
+      degree: "M.S. (Thesis; Physical Geography and Environment Stream)",
+      year: "2020",
+      institution: "Department of Geography and Environment, University of Dhaka"
+    },
+    {
+      degree: "B.S. (Hon's)",
+      year: "2019",
+      institution: "Department of Geography and Environment, University of Dhaka"
+    }
+  ],
+  activeProject: "Diverse types of coupling trends in tree and non-tree vegetation composition in key forest ecosystems of Bangladesh",
   stats: {
-    publications: 65,
-    citations: 2150,
-    hIndex: 22,
-    students: 18,
-    grants: 8,
-    yearsActive: 15,
+    publications: 9,
+    citations: 0,
+    hIndex: 0,
+    students: 0,
+    grants: 1,
+    yearsActive: 4,
   },
 };

@@ -234,18 +234,43 @@ export function NewsCard({ item }) {
       viewport={{ once: true }}
       className="card p-5 hover:shadow-lg transition-all duration-300 group"
     >
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <span className={`text-xs px-2.5 py-0.5 rounded-full font-medium ${categoryColors[item.category] || 'bg-gray-100 text-gray-600'}`}>
+      <div className="flex items-start justify-between gap-3 mb-0">
+        <span
+          className={`text-xs px-2.5 py-0.5 rounded-full font-medium ${categoryColors[item.category] || 'bg-gray-100 text-gray-600'}`}
+        >
           {item.category}
         </span>
-        <span className="text-xs text-gray-400 dark:text-gray-500 font-mono shrink-0">{item.date}</span>
       </div>
-      <h3 className="font-serif text-sm font-semibold text-gray-900 dark:text-white mb-2 leading-snug group-hover:text-navy-700 dark:group-hover:text-blue-300 transition-colors">
-        {item.title}
-      </h3>
-      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2">
-        {item.excerpt}
-      </p>
+
+      <div className="mt-3">
+        {item.date && (
+          <p className="text-xs font-mono text-gray-400 dark:text-gray-500 mb-2">
+            {item.date}
+          </p>
+        )}
+
+        {item.title && (
+          <h3 className="font-serif text-base font-semibold text-gray-900 dark:text-white mb-2 leading-snug">
+            {item.title}
+          </h3>
+        )}
+
+        {item.excerpt && (
+          <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-3 line-clamp-2">
+            {item.excerpt}
+          </p>
+        )}
+
+        {item.link && item.link !== '#' && (
+          <a
+            href={item.link}
+            className="inline-flex items-center gap-1 text-xs font-medium text-navy-600 dark:text-blue-400 hover:underline"
+          >
+            Read more
+            <ExternalLink size={12} />
+          </a>
+        )}
+      </div>
     </motion.div>
   );
 }
